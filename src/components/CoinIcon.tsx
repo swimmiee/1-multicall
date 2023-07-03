@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { cn } from "utils";
+import { cn } from "utils/cn";
 
 export type CoinIconSize = "xxl" | "xl" | "lg" | "md" | "ms" | "sm" | "xs";
 export const iconSizeOf: { [size in CoinIconSize]: string } = {

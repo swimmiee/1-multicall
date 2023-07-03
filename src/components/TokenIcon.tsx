@@ -1,21 +1,22 @@
+import { TokenData } from "interfaces/data/token-data.interface";
 import { CoinIcon, CoinIconSize } from "./CoinIcon";
-import { Token } from "modules/Token";
+import { chainDataList } from "data/chains";
 import type { FC } from "react";
 
 interface TokenIconProps {
-  token: Token;
+  token: TokenData;
   size: CoinIconSize;
   borderColor?: string | null;
 }
 
 export const TokenIcon: FC<TokenIconProps> = ({ token, size, borderColor }) => {
   if (!token) return null;
-  const chain = token.getChain();
+  const chain = chainDataList.find(c => c.id === token.chainId)!;
   return (
     <div className="relative mr-1.5 rounded-full bg-white">
       <CoinIcon
         alt={token.symbol}
-        imgSrc={token.imgUrl}
+        imgSrc={token.logoURI}
         size={size}
         borderColor={borderColor}
       />
@@ -23,7 +24,7 @@ export const TokenIcon: FC<TokenIconProps> = ({ token, size, borderColor }) => {
         <CoinIcon
           className="z-10 bg-white"
           alt={chain.name}
-          imgSrc={chain.imgUrl}
+          imgSrc={chain.logoURI}
           size={size === "xl" || size === "xxl" ? "md" : "sm"}
           borderColor="#ddd"
         />
