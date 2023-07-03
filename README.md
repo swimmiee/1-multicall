@@ -14,7 +14,7 @@
 # Get Started
 
 ```bash
-git clone
+git clone https://github.com/swimmiee/1-multicall-recoil
 npm i
 ```
 
