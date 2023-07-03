@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-4 py-2 rounded-md text-white font-semibold bg-green-500 enabled:hover:bg-green-600 disabled:opacity-60;
+}
