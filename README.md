@@ -81,19 +81,19 @@ npm i -D typechain @typechain/ethers-v5
    ```
 
 7. Metamask 사용 전 준비
-```bash
-npm i -D @metamask/providers
-```
+   ```bash
+   npm i -D @metamask/providers
+   ```
 
-`src/vite-env.d.ts`에서
-```ts
-/// <reference types="vite/client" />
-
-import { MetaMaskInpageProvider } from "@metamask/providers";
-
-declare global {
-  interface Window {
-    ethereum: MetaMaskInpageProvider;
-  }
-}
-```
+   `src/vite-env.d.ts`에서
+   ```ts
+   /// <reference types="vite/client" />
+   
+   import { MetaMaskInpageProvider } from "@metamask/providers";
+   
+   declare global {
+     interface Window {
+       ethereum: MetaMaskInpageProvider;
+     }
+   }
+   ```
