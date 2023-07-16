@@ -1,11 +1,10 @@
-# 1. Multicall & Recoil.js
+# 1. Multicall
 
 2023 Summer Blockchain Valley Frontend Session (23/07/2023)
 
 # Objective
 1. Web3를 위한 Frontend 기본 세팅
 2. Multicall 이해하기
-3. Recoil 이해하기
 
 ## 최종 Goal 
 여러가지 체인에 있는 다양한 토큰에 대해서, 유저가 현재 가지고 있는 토큰의 양을 확인한다.
