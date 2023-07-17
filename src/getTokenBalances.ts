@@ -47,10 +47,6 @@ export const getTokenBalances = async (
     )
   );
 
-  console.log(
-    returnData.map((balance, i) => formatUnits(balance, tokens[i].decimals))
-  );
-
   return returnData.map((balance, i) =>
     formatUnits(balance, tokens[i].decimals)
   );

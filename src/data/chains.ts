@@ -1,6 +1,6 @@
 import { ChainData } from "../interfaces/data/chain-data.interface";
 
-export const chainDataList:ChainData[] = [
+export const chainDataList: ChainData[] = [
   {
     key: "eth",
     chainType: "EVM",
@@ -64,7 +64,7 @@ export const chainDataList:ChainData[] = [
       },
       rpcUrls: [
         "https://polygon-rpc.com/",
-        "https://rpc-mainnet.maticvigil.com/",
+        // "https://rpc-mainnet.maticvigil.com/",
       ],
     },
     nativeToken: {
@@ -101,11 +101,7 @@ export const chainDataList:ChainData[] = [
         symbol: "BNB",
         decimals: 18,
       },
-      rpcUrls: [
-        "https://bsc-dataseed.binance.org/",
-        "https://bsc-dataseed1.defibit.io/",
-        "https://bsc-dataseed1.ninicoin.io/",
-      ],
+      rpcUrls: ["https://rpc-bsc.48.club"],
     },
     nativeToken: {
       address: "0x0000000000000000000000000000000000000000",
