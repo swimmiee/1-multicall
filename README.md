@@ -30,8 +30,8 @@ npm create vite@latest
 2. 루트 폴더로 이동한 뒤, 아래 library 설치
 
 ```bash
-npm i recoil tailwindcss ethers@5 axios
-npm i -D typechain @typechain/ethers-v5
+npm i recoil tailwindcss ethers axios
+npm i -D typechain @typechain/ethers-v6
 ```
 
 3. Tailwind css setup
@@ -47,7 +47,7 @@ npm i -D typechain @typechain/ethers-v5
    ```json
    "scripts": {
        ...
-       "typechain": "typechain --target ethers-v5 --out-dir src/typechain src/abi/**/*.json"
+       "typechain": "typechain --target ethers-v6 --out-dir src/typechain src/abi/**/*.json"
    }
    ```
 
